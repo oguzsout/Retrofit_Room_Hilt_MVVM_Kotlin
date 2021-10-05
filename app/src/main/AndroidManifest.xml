@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.oguzdogdu.retrofit_room_hilt_mvvm_kotlin">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name=".MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Retrofit_Room_Hilt_MVVM_Kotlin">
+        android:theme="@style/Theme.Retrofit_Room_Hilt_MVVM_Kotlin"
+        android:fullBackupContent="@xml/backup_descriptor">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".view.MainActivity"
+            android:exported="true"
+            tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

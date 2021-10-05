@@ -5,9 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
+import com.oguzdogdu.retrofit_room_hilt_mvvm_kotlin.model.GithubModelItem
 import com.oguzdogdu.retrofit_room_hilt_mvvm_kotlin.model.TypeConverterOwner
 
-@Database(entities = [], version = 1, exportSchema = false)
+@Database(entities = [GithubModelItem::class], version = 1, exportSchema = false)
 @TypeConverters(TypeConverterOwner::class)
 abstract class AppDatabase : RoomDatabase() {
 

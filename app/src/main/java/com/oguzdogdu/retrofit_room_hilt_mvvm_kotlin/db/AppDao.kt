@@ -13,6 +13,6 @@ interface AppDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertRecords(githubModelItem: GithubModelItem)
 
-    @Delete
-    fun deleteAllRecords(githubModelItem: GithubModelItem)
+    @Query("DELETE FROM repositories")
+    fun deleteAllRecords()
 }
