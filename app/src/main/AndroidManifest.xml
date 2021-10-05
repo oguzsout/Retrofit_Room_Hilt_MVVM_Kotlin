@@ -11,8 +11,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Retrofit_Room_Hilt_MVVM_Kotlin"
-        android:fullBackupContent="">
+        android:theme="@style/Theme.Retrofit_Room_Hilt_MVVM_Kotlin">
         <activity
             android:name=".view.MainActivity"
             android:exported="true"
